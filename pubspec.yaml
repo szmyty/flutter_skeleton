@@ -1,0 +1,39 @@
+name: flutter_skeleton
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  auto_route: ^8.0.3
+  bloc: ^8.1.4
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  freezed_annotation: ^2.4.1
+  google_fonts: ^6.2.1
+  hydrated_bloc: ^9.1.5
+  json_annotation: ^4.8.1
+  ulid: ^2.0.0
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
+  auto_route_generator: ^8.0.0
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  gen: 
+    $script: dart run build_runner build --delete-conflicting-outputs
+    $description: "Generate files"
